@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #0e0e0d;
+}
+
+QWidget {
+    background-color: #0e0e0d;
+    color: #e8e3d8;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 14px;
+}
+
+QMenuBar {
+    background-color: #111110;
+    color: #d8d2c7;
+    border-bottom: 1px solid #25231f;
+    padding: 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: 7px;
+}
+
+QMenuBar::item:selected {
+    background-color: #1d1c1a;
+    color: #f5efe3;
+}
+
+QMenu {
+    background-color: #161514;
+    color: #e8e3d8;
+    border: 1px solid #2c2924;
+    border-radius: 8px;
+}
+
+QMenu::item {
+    padding: 7px 26px;
+}
+
+QMenu::item:selected {
+    background-color: #2a2722;
+    color: #f5efe3;
+}
+
+QStatusBar {
+    background-color: #111110;
+    color: #bdb6aa;
+    border-top: 1px solid #25231f;
+}
+
+QGroupBox {
+    background-color: #171615;
+    border: 1px solid #2b2925;
+    border-radius: 14px;
+    margin-top: 18px;
+    padding: 18px 12px 12px 12px;
+    color: #f2ecdf;
+    font-weight: 600;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 14px;
+    top: 2px;
+    padding: 0px 8px;
+    color: #f2ecdf;
+    background-color: #0e0e0d;
+}
+
+QLabel {
+    color: #d9d3c8;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+}
+
+QLineEdit {
+    background-color: #11100f;
+    color: #e8dcc3;
+    border: 1px solid #302d27;
+    border-radius: 8px;
+    padding: 5px 8px;
+    min-height: 24px;
+    selection-background-color: #8f7a50;
+    selection-color: #ffffff;
+}
+
+QLineEdit:hover {
+    border: 1px solid #3b372f;
+    background-color: #151412;
+}
+
+QLineEdit:focus {
+    border: 1px solid #b79a63;
+    background-color: #151412;
+}
+
+QComboBox {
+    background-color: #11100f;
+    color: #f0eadf;
+    border: 1px solid #302d27;
+    border-radius: 8px;
+    padding: 5px 10px;
+    min-height: 26px;
+}
+
+QComboBox:hover {
+    border: 1px solid #4a4438;
+    background-color: #151412;
+}
+
+QComboBox:focus {
+    border: 1px solid #b79a63;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #151412;
+    color: #e8e3d8;
+    border: 1px solid #302d27;
+    selection-background-color: #5a4b33;
+    selection-color: #ffffff;
+    outline: none;
+    padding: 4px;
+}
+
+QPushButton {
+    background-color: #20201e;
+    color: #f1eadf;
+    border: 1px solid #35322c;
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #292824;
+    border: 1px solid #4a4438;
+}
+
+QPushButton:pressed {
+    background-color: #171615;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+QPushButton:disabled {
+    background-color: #151412;
+    color: #777167;
+    border: 1px solid #26231f;
+}
+
+QPushButton#Start {
+    background-color: #2f5a3d;
+    border: 1px solid #3f704f;
+    color: #ffffff;
+}
+
+QPushButton#Start:hover {
+    background-color: #386848;
+    border: 1px solid #4e815d;
+}
+
+QPushButton#Stop {
+    background-color: #6b2f2f;
+    border: 1px solid #884040;
+    color: #ffffff;
+}
+
+QPushButton#Stop:hover {
+    background-color: #7a3838;
+    border: 1px solid #9a4c4c;
+}
+
+QPushButton#Reset {
+    background-color: #242320;
+    border: 1px solid #3b372f;
+    color: #f1eadf;
+}
+
+QPushButton#Reset:hover {
+    background-color: #302d28;
+    border: 1px solid #5a4b33;
+}
+
+QPushButton#Pause {
+    background-color: #242320;
+    border: 1px solid #3b372f;
+    color: #f1eadf;
+}
+
+QPushButton#Pause:hover {
+    background-color: #302d28;
+    border: 1px solid #5a4b33;
+}
+
+QCheckBox {
+    background: transparent;
+    color: #d9d3c8;
+    spacing: 8px;
+    border: none;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid #4a4438;
+    background-color: #11100f;
+}
+
+QCheckBox::indicator:hover {
+    border: 1px solid #b79a63;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #b79a63;
+    border: 1px solid #d2b77a;
+}
+
+QSlider {
+    background: transparent;
+    min-height: 24px;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    background-color: #25231f;
+    border-radius: 3px;
+}
+
+QSlider::sub-page:horizontal {
+    background-color: #b79a63;
+    border-radius: 3px;
+}
+
+QSlider::add-page:horizontal {
+    background-color: #25231f;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #d6c49b;
+    border: 1px solid #f0deb2;
+    width: 15px;
+    height: 15px;
+    margin: -6px 0px;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color: #f0deb2;
+    border: 1px solid #fff1c8;
+}
+
+#centralwidget {
+    background-color: #0e0e0d;
+}
+
+#Informacje,
+#Animacja,
+#Jakosc,
+#Ustawienia,
+#Widok {
+    background-color: #171615;
+    border: 1px solid #2b2925;
+    border-radius: 14px;
+}
+
+#AnimacjaInfo,
+#CzasRenderowaniaInfo,
+#KlatkaInfo,
+#LiczbaIteracjiInfo,
+#PozycjaInfo,
+#Tryb,
+#ZoomInfo {
+    color: #d6c49b;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+#lineEditSzybkoscAnimacji,
+#lineEditIloscIteracji,
+#lineEditRozdzielczoscRenderowania,
+#lineEditZoom,
+#lineEditPrzesX,
+#lineEditPrzesY {
+    background-color: #11100f;
+    color: #e8dcc3;
+    border: 1px solid #302d27;
+    border-radius: 8px;
+    padding: 4px 8px;
+    min-height: 24px;
+    max-height: 24px;
+}
+
+#horizontalSliderSzybkoscAnimacji,
+#horizontalSliderIloscIteracji,
+#horizontalSliderRozdzielczoscRenderowania,
+#horizontalSliderZoom,
+#horizontalSliderPrzesyX,
+#horizontalSliderPrzesY {
+    min-height: 24px;
+}
+
+#Ustawienia QLabel,
+#Animacja QLabel,
+#Jakosc QLabel,
+#Widok QLabel {
+    font-size: 12px;
+    color: #cfc7ba;
+}
+
+#Ustawienia QComboBox {
+    font-size: 12px;
+    min-height: 24px;
+    max-height: 24px;
+    min-width: 150px;
+    max-width: 210px;
+    padding: 3px 8px;
+}
+
+#Animacja QLineEdit,
+#Jakosc QLineEdit,
+#Widok QLineEdit {
+    font-size: 12px;
+    min-height: 22px;
+    max-height: 22px;
+    min-width: 58px;
+    max-width: 82px;
+    padding: 2px 6px;
+}
+
+#Animacja QSlider,
+#Jakosc QSlider,
+#Widok QSlider {
+    min-width: 150px;
+    max-width: 240px;
+}
+
+#Animacja QPushButton,
+#Widok QPushButton {
+    font-size: 12px;
+    min-height: 32px;
+    padding: 6px 10px;
+}
+
+#Start,
+#Pause,
+#Stop,
+#Reset {
+    min-width: 95px;
+    max-width: 160px;
+}
+
+#rightPanel {
+    background-color: #0e0e0d;
+}
+
+#widget,
+#fractalView {
+    background-color: #070707;
+    border: 1px solid #24221f;
+    border-radius: 14px;
+} QLineEdit {
+    selection-background-color: #7c5fb8;
+}
+
+QLineEdit:focus {
+    border: 1px solid #a78bfa;
+    background-color: #151316;
+}
+
+QComboBox:focus {
+    border: 1px solid #a78bfa;
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: #5b477d;
+    selection-color: #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 1px solid #a78bfa;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #7c5fb8;
+    border: 1px solid #a78bfa;
+}
+
+QSlider::sub-page:horizontal {
+    background-color: #8b6bd6;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #b7a2f5;
+    border: 1px solid #d2c4ff;
+    width: 15px;
+    height: 15px;
+    margin: -6px 0px;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color: #d2c4ff;
+    border: 1px solid #efe9ff;
+}
+
+#AnimacjaInfo,
+#CzasRenderowaniaInfo,
+#KlatkaInfo,
+#LiczbaIteracjiInfo,
+#PozycjaInfo,
+#Tryb,
+#ZoomInfo {
+    color: #b7a2f5;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+#lineEditSzybkoscAnimacji,
+#lineEditIloscIteracji,
+#lineEditRozdzielczoscRenderowania,
+#lineEditZoom,
+#lineEditPrzesX,
+#lineEditPrzesY {
+    color: #ddd3ff;
+    border: 1px solid #332d3f;
+}
+
+#lineEditSzybkoscAnimacji:focus,
+#lineEditIloscIteracji:focus,
+#lineEditRozdzielczoscRenderowania:focus,
+#lineEditZoom:focus,
+#lineEditPrzesX:focus,
+#lineEditPrzesY:focus {
+    border: 1px solid #a78bfa;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="Ustawienia">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>0</y>
+      <width>401</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Ustawienia</string>
+    </property>
+    <widget class="QLabel" name="TypFraktala">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Typ fraktala</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="TypFraktalaCombo">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>208</width>
+       <height>32</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PaletaKolorow">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Paleta kolorów</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="PaletaKolorowCombo">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>208</width>
+       <height>32</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Animacja">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>130</y>
+      <width>401</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Animacja</string>
+    </property>
+    <widget class="QPushButton" name="Start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>117</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Stop">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>117</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reset">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>30</y>
+       <width>117</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SzybkosAnimacji">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Szybkość animacji</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderSzybkoscAnimacji">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>240</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxPetla">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>92</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>petla</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSzybkoscAnimacji">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>120</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Jakosc">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>330</y>
+      <width>401</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Jakość</string>
+    </property>
+    <widget class="QLabel" name="IloscIteracji">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ilość iteracji</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderIloscIteracji">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>201</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditIloscIteracji">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>40</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderRozdzielczoscRenderowania">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>240</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RozdzielczoscRenderowania">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rozdzielczość renderowania</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditRozdzielczoscRenderowania">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Widok">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>470</y>
+      <width>401</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Widok</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditZoom">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>40</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderZoom">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>201</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Zoom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zoom</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderPrzesyX">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>201</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="przesx">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>przes x</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPrzesX">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>70</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSliderPrzesY">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>201</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="przesy">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>przes y</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPrzesY">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>100</y>
+       <width>72</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DopasujDoOkna">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>151</width>
+       <height>46</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dopasuj do okna</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Informacje">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>641</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Informacje</string>
+    </property>
+    <widget class="QLabel" name="Klatka">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> Klatka(FPS):</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CzasRenderowania">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Czas renderowania:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LiczbaIteracji">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Liczba iteracji:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Pozycja">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pozycja</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Zoom_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zoom</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Tryb">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tryb</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CzasRenderowaniaInfo">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="text">
+      <string>18.7ms</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="KlatkaInfo">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="text">
+      <string>50.2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LiczbaIteracjiInfo">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="text">
+      <string>300</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PozycjaInfo">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>( 0000 , 0000 )</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ZoomInfo">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>100.00+e00</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AnimacjaInfo">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>110</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Animacja</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>641</width>
+      <height>501</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1092</width>
+     <height>39</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
