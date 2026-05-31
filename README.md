@@ -142,7 +142,7 @@ To build and run the project locally, you need:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/qt-fractal-animation.git
+git clone https://github.com/Avuii/FractalAnimation.git
 cd qt-fractal-animation
 ```
 
