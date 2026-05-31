@@ -199,10 +199,10 @@ qt-fractal-animation/
 - add mouse-based zoom and panning
 - add screenshot export
 - add animation recording
-- improve responsive layout behavior
 - add more color palettes
 - optimize rendering performance
-- add application icon and Windows installer
+- add application icon
+- add eng mode
 
 ---
 
