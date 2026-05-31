@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/overview.png" alt="Qt Fractal Animation overview" width="720" />
+  <img src="screenshots/Mendelbrot.png" alt="Qt Fractal Animation overview" width="720" />
 </p>
 
 ---
@@ -102,13 +102,10 @@ The animation uses zoom to show that smaller parts of the structure repeat the s
 <a id="screenshots"></a>
 ## 📸 Screenshots
 
-| Mandelbrot | Julia |
-|---|---|
-| <img src="screenshots/mandelbrot.png" alt="Mandelbrot set" width="360" /> | <img src="screenshots/julia.png" alt="Julia set" width="360" /> |
+| Mandelbrot | Julia | Sierpiński Carpet | 
+|---|---|---|
+| <img src="screenshots/Mendelbrot.png" alt="Mandelbrot set" width="360" /> | <img src="screenshots/Julia.png" alt="Julia set" width="360" /> | <img src="screenshots/Sierpinski.png" alt="Sierpiński carpet" width="360" /> |
 
-| Sierpiński Carpet | Interface |
-|---|---|
-| <img src="screenshots/sierpinski.png" alt="Sierpiński carpet" width="360" /> | <img src="screenshots/overview.png" alt="Application interface" width="360" /> |
 
 ---
 
